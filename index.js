@@ -15,7 +15,7 @@ const app = express()
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', function(req, res) {
-  res.send('Get ready for YearnCity!');
+  res.send('Get ready for YearnCityTest!');
 })
 
 app.get('/api/token/:token_id', function(req, res) {
