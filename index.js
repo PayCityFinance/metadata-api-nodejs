@@ -29,7 +29,7 @@ app.get('/api/token/:token_id', function(req, res) {
     'attributes': {
       'description': person.descripton,
     },
-    'image': `${HOST}/images/${tokenId}.png`
+    'image': `https://yearncitytest.herokuapp.com/images/${tokenId}.png`
   }
   res.send(data)
 })
