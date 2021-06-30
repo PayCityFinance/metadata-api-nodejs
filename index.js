@@ -26,7 +26,7 @@ app.get('/api/:token_id', function(req, res) {
     'attributes': {
       'description': person.descripton,
     },
-    'image': `https://yearncitytest.herokuapp.com/images/${tokenId}.png`
+    'image': `https://yearncitytest.herokuapp.com/images/` + attributes["img"]`
   }
   res.send(data)
 })
